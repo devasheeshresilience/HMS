@@ -1,0 +1,99 @@
+@import 'assets/css/bootstrap.min.css';
+@import 'assets/plugins/fontawesome/css/fontawesome.css';
+@import 'assets/plugins/fontawesome/css/all.min.css';
+@import 'assets/css/feather.css';
+@import 'assets/css/custom.css';
+@import '@ngxpert/hot-toast/styles.css';
+.select2-container--bootstrap-5 .select2-selection{
+    min-height: calc(2.0em + .75rem + 2px) !important;
+}
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered .select2-selection__placeholder{
+    line-height: 1.9 !important;
+}
+/* Submenu box styling */
+.dashboard-menu .submenu {
+    padding-left: 12px;
+    margin-top: 5px;
+    border-left: 2px solid #0d6efd;
+    background: #f8f9fa;
+    border-radius: 6px;
+    overflow: hidden;
+    animation: fadeInDown 0.25s ease-in-out;
+}
+
+/* Submenu list items */
+.dashboard-menu .submenu li a {
+    display: block;
+    padding: 8px 12px;
+    color: #495057;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color .2s ease, padding-left .2s ease;
+}
+
+/* Hover effect */
+.dashboard-menu .submenu li a:hover {
+    background: #e9ecef;
+    padding-left: 18px;
+    color: #0d6efd;
+}
+
+/* Active main menu highlight */
+.dashboard-menu li.active > a {
+    background: #e7f1ff !important;
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+/* Rotate the arrow */
+.dashboard-menu li.active > a i.fas.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Smooth rotation */
+.dashboard-menu a i.fas.fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+/* Fade + slide animation */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.dashboard-menu li > a {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+/* Space between text and arrow */
+.dashboard-menu li > a i.fa-chevron-down {
+    margin-left: auto !important;
+    margin-right: 5px !important;
+}
+
+/* Rotate arrow on active */
+.dashboard-menu li.active > a i.fa-chevron-down {
+    transform: rotate(180deg) !important;
+}
+
+.dashboard-menu li > a i.fa-chevron-down {
+    transition: transform .3s ease !important;
+}
+.profile-sidebar {
+  min-height: 100vh !important; /* full viewport */
+  height: auto !important;
+}
+
+.profile-sidebar .theiaStickySidebar {
+  position: relative !important;
+  height: auto !important;
+  min-height: 100vh !important;
+}
