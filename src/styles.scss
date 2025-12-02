@@ -4,12 +4,15 @@
 @import 'assets/css/feather.css';
 @import 'assets/css/custom.css';
 @import '@ngxpert/hot-toast/styles.css';
-.select2-container--bootstrap-5 .select2-selection{
+
+.select2-container--bootstrap-5 .select2-selection {
     min-height: calc(2.0em + .75rem + 2px) !important;
 }
-.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered .select2-selection__placeholder{
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
     line-height: 1.9 !important;
 }
+
 /* Submenu box styling */
 .dashboard-menu .submenu {
     padding-left: 12px;
@@ -39,14 +42,14 @@
 }
 
 /* Active main menu highlight */
-.dashboard-menu li.active > a {
+.dashboard-menu li.active>a {
     background: #e7f1ff !important;
     color: #0d6efd !important;
     font-weight: 600;
 }
 
 /* Rotate the arrow */
-.dashboard-menu li.active > a i.fas.fa-chevron-down {
+.dashboard-menu li.active>a i.fas.fa-chevron-down {
     transform: rotate(180deg);
 }
 
@@ -61,39 +64,49 @@
         opacity: 0;
         transform: translateY(-6px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
 
-.dashboard-menu li > a {
+.dashboard-menu li>a {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
 }
 
 /* Space between text and arrow */
-.dashboard-menu li > a i.fa-chevron-down {
+.dashboard-menu li>a i.fa-chevron-down {
     margin-left: auto !important;
     margin-right: 5px !important;
 }
 
 /* Rotate arrow on active */
-.dashboard-menu li.active > a i.fa-chevron-down {
+.dashboard-menu li.active>a i.fa-chevron-down {
     transform: rotate(180deg) !important;
 }
 
-.dashboard-menu li > a i.fa-chevron-down {
+.dashboard-menu li>a i.fa-chevron-down {
     transition: transform .3s ease !important;
 }
+
 .profile-sidebar {
-  min-height: 100vh !important; /* full viewport */
-  height: auto !important;
+    min-height: 100vh !important;
+    /* full viewport */
+    height: auto !important;
 }
 
 .profile-sidebar .theiaStickySidebar {
-  position: relative !important;
-  height: auto !important;
-  min-height: 100vh !important;
+    position: relative !important;
+    height: auto !important;
+    min-height: 100vh !important;
+}
+
+.select-dropdown {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border-color: #e2e8f0;
+    color: #6b7280;
 }

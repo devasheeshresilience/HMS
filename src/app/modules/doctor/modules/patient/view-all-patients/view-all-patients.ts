@@ -17,7 +17,7 @@ export class ViewAllPatients implements OnInit {
 
   searchText = "";
   pageNumber = 1;
-  pageSize = 10;
+  pageSize: any = [5, 10, 20, 50, 100][1];
   totalPages = 0;
 
   ngOnInit() {
@@ -70,7 +70,10 @@ export class ViewAllPatients implements OnInit {
       this.loadPatients();
     }
   }
-
+updatePageSize() {
+    this.pageNumber = 1;
+    this.loadPatients();
+  }
   // Go to a page
   goToPage(page: number) {
     this.pageNumber = page;

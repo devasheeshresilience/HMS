@@ -36,6 +36,11 @@
                 <div class="col-lg-8 col-xl-9">
                     <div class="dashboard-header">
                         <h3>Patients</h3>
+                        <div>Items per page
+                            <select [(ngModel)]="pageSize" (change)="updatePageSize()" class="select-dropdown">
+                                <option *ngFor="let size of [5, 10, 20, 50, 100]" [value]="size">{{ size }}</option>
+                            </select>
+                        </div>
                         <ul class="header-list-btns">
                             <li class="me-2">
                                 <div class="input-block dash-search-input">
